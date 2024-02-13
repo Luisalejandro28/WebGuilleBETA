@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,17 +15,18 @@
 <body>
     <!--Barra de navegacion-->
     <div class="fondo">
-        <header>
-            <nav class="bar-menu">
-                <ul class="menu-items">
-                    <a href="#começar">
-                        <img class="logo" src="./img/logo1.png" alt="logo">
-                    </a>
-                    <a class="menu-item" href="#começar"><li>Começar</li></a>
-                    <a class="menu-item" href=""><li>Servicios</li></a>
-                    <a class="menu-item" href="#turno"><li>Turnos</li></a>
-                    <a class="menu-item" href="#contato"><li>Contato</li></a>
-                    <a class="menu-item" href="#localizacion"><li>Localizacion</li></a>
+        <header class="navegation">
+            <nav class="nav-bar">
+                <a href="#"><img class="logo" src="./img/logo1.png" alt="logo"></a>
+                <button class="nav-toggle" aria-label="abrir menu">
+                    <img width="48" height="48" src="https://img.icons8.com/ios/50/menu-squared-2.png" alt="menu-squared-2"/>
+                </button>
+                <ul class="nav-menu nav-menu_visible">
+                    <li class="nav-menu-item"><a class="nav-link" href="#">Começar</a></li>
+                    <li class="nav-menu-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-menu-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-menu-item"><a class="nav-link" href="#turno">Turnos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link" href="#localizacion">Localização</a></li>
                 </ul>
             </nav>
         </header>
@@ -45,10 +46,10 @@
             <div class="carousel-container">
                 <div class="carrusel" id="slider">
                     <section class="slider-section" >
-                        <img src="https://i.pinimg.com/originals/36/5b/07/365b07a3d99147eb55ec4672d3993740.jpg" alt="">
+                        <img src="./img/logoX.png" alt="img">
                     </section>
                     <section class="slider-section" >
-                        <img src="https://i.pinimg.com/originals/e3/cb/60/e3cb60146e6202434a9e78952c2cea30.jpg" alt="">
+                        <img src="./img/barberia.jpg" alt="img">
                     </section>
                     <section class="slider-section" >
                         <img src="./img/babershoplogo.jpg" alt="">
@@ -69,12 +70,12 @@
         <article class="text-contact" id="turno">
             <div class="contact-item">
                 <h2>Faça a Sua Reserva Hoje e Descubra a Arte da Barbearia</h2>
-                <p>Simplificamos o processo. Com a nossa plataforma de reserva online, pode garantir o seu agendamento em segundos. O seu estilo está apenas a um clique de distância!</p>
+                <p class="content-contact">Simplificamos o processo. Com a nossa plataforma de reserva online, pode garantir o seu agendamento em segundos. O seu estilo está apenas a um clique de distância!</p>
                 <a class="btn-contact" href="https://veptbarbershop.trafft.com/"><button>Faz a tua reserva agora<img class="img-contact" src="./img/agenda.png" alt="turnos"></button></a>
             </div>
             <div class="contact-item" id="contato">
                 <h2>Porque nos escolher?</h2>
-                <p>Comprometemo-nos a proporcionar-lhe uma experiência que vá além das expectativas. Junte-se a nós e descubra por que VEPT Barber Shop é o destino preferido para aqueles que procuram não apenas um corte de cabelo, mas um estilo inesquecível.</p>
+                <p class="content-contact">Comprometemo-nos a proporcionar-lhe uma experiência que vá além das expectativas. Junte-se a nós e descubra por que VEPT Barber Shop é o destino preferido para aqueles que procuram não apenas um corte de cabelo, mas um estilo inesquecível.</p>
                 <a class="btn-contact" href="tel:+351964439505"><button>Contacte-nos <img class="img-contact chamar" src="./img/llamar1.png" alt="chamar"></button></a>
             </div>
         </article>
@@ -83,7 +84,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12021.965139807719!2d-8.63051!3d41.1238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24653f5a6b3f5f%3A0x1273c910341acd6b!2sVEPT%20Barber%20Shop!5e0!3m2!1ses-419!2sar!4v1707775760399!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="info-location">
                 <h3>Descubra Nossa Localização</h3>
-                <span>R. Oliveira Mendes 61, 4400-035 Vila Nova de Gaia</span>
+                <span class="direccion">R. Oliveira Mendes 61, 4400-035 Vila Nova de Gaia</span>
             </div>
         </article>
         <div class="icon-contact">

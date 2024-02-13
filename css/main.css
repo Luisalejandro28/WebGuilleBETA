@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: black;
+    font-family: "Libre Franklin", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*carrusel*/
+.carousel-container{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.carrusel{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slider-section{
+    width: calc(100% / 5);
+    height: 100%;
+}
+.slider-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.btn-left, .btn-right{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #23ddbe;
+    transform: translate(0,-50%);
+    transition: 5s ease;
+    user-select: none;
+}
+.btn-left:hover, .btn-right:hover{
+    background-color: #333333d4;
+}
+.btn-left{
+    left: 10px;
+}
+.btn-right{
+    right: 10px;
+}
+/*Bar Navegation*/
+.logo{
+    height: 175px;
+    width: 175px;
+}
+.menu-items{   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu-item{
+    height: 25px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;    
+}
+.menu-item:hover{
+    background-color: #206462;
+}
+/*Container Central*/
+.text-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-info{
+    display: flex;
+    flex-direction: column;
+}
+.logo, .logo-1{
+    filter: drop-shadow(4px 4px 4px #206462);
+}
+.logo-1{
+    height: 400px;
+    width: 400px;
+}
+.btn-marcar button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    width: 120px;
+    transition: width .3s;
+    background-color: #555f75;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    filter: drop-shadow( 5px 5px 5px #555f75);
+}
+.btn-marcar button img {
+    display: none;
+}
+.btn-marcar button:hover img{
+    display: block;
+}
+.btn-marcar:hover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    filter: drop-shadow( 0 0 3px #206462);
+}
+.btn-marcar img{
+    height: 20px;
+    width: 20px;
+}
+/*Container Informacion*/
+
+.text-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+/*BTN-CONTACT*/
+.btn-contact button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    width: 120px;
+    transition: width .3s;
+    background-color: #555f75;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    filter: drop-shadow( 5px 5px 5px #555f75);
+}
+.btn-contact button:hover{
+    background-color: white;
+    color: #555f75;
+    font-weight: 600;
+}
+.btn-contact button img {
+    display: none;
+}
+.btn-contact button:hover img{
+    display: block;
+}
+.btn-contact:hover{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 190px;
+}
+.btn-contact img{
+    height: 20px;
+    width: 20px;
+}
+.contact-item h2{
+    padding: 20px;
+}
+.contact-item,.btn-contact{
+    margin-top: 30px;
+}
+.chamar{
+    transform: rotate(180deg);
+}
+
+.img-contact{
+    height: 30px;
+    width: 30px;
+}
+/*ICONOS FLOTANTES*/
+.icon-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: drop-shadow(0 0 8px black);
+}
+.whats-app:hover{
+    transform: rotate(359deg);
+    transition: all .3s ease;
+}
+.icon:hover{
+    background-color: #302d2d;
+    /* transform: rotate(180deg); */
+    transition: all .3s ease;
+    filter: drop-shadow(0 0 8px #206462);    
+}
+.phone:hover{
+    transform: rotate(180deg);
+    transition: all .3s ease;
+}
+.whatsapp, .phone{
+    height: 27px;
+    width: 27px;
+}
+
+/*Localizacion*/
+.localizacion{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+iframe{
+    
+    filter: drop-shadow(8px 8px 8px #206462);
+}
+
+/*FOOTER*/
+.pageFoot{
+    background-color: #206462;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.redes{
+    display: flex;
+}
+
+/*Mediaqueries*/
+
+/*carrusel*/
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      width: auto;
+    }
+    /*BAR NAVEGATION*/
+    .logo{
+        height: 75px;
+        width: 75px;
+    }
+    .bar-menu, .menu-items{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-item{
+        font-size: 12px;
+    }
+    /*contenedor central*/
+    .carousel-container{
+        position: relative;
+        width: 100%;
+        height: 335px;
+        background-color: #e0e0e0;
+        box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.66);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .logo-container{
+        display: none;
+    }
+    .text-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    /*Text Contact*/
+    .text-contact{
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+    }
+    .btn-contact{
+        margin-top: 15px;
+    }
+/*Localizacion*/
+    .localizacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-location{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
